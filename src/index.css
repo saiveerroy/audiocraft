@@ -1,0 +1,126 @@
+
+/* GLOBAL RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  background: #0B0913;
+  color: #F5F3FF;
+  font-family: Inter, Arial, sans-serif;
+  min-width: 320px;
+}
+
+/* ROOT */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* BUTTONS */
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* INPUT RANGE */
+
+input[type="range"] {
+  cursor: pointer;
+  accent-color: #A879FF;
+}
+
+/* FILE INPUT */
+
+input[type="file"] {
+  display: none;
+}
+
+/* AUDIO PLAYER */
+
+audio {
+  width: 100%;
+}
+
+/* VIDEO */
+
+video {
+  background: #000;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0913;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #49356D;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8957F5;
+}
+
+/* TEXT SELECTION */
+
+::selection {
+  background: #8957F5;
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  aside {
+    width: 210px !important;
+  }
+
+  main {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 14px !important;
+  }
+
+  h1 {
+    font-size: 25px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
